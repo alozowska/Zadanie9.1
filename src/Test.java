@@ -16,10 +16,7 @@ public class Test {
         System.out.println("pole prostokąta: "+shapeCalculator.rectangleAre(rectangle1));
         Ball ball1=new Ball(6);
         System.out.println("objętość kuli: "+shapeCalculator.ballVolume(ball1));
-        Point pointCube1=new Point(0,0);
-        Point pointCube2=new Point(0,5);
-        Cube cube1=new Cube(pointCube1,pointCube2);
+        Cube cube1=new Cube(5);
         System.out.println("objętość sześcianu: "+shapeCalculator.cubeVolume(cube1));
     }
-
 }

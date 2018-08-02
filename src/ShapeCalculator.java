@@ -14,13 +14,11 @@ public class ShapeCalculator extends LineCalc implements Calc2D, Calc3D {
 
     @Override
     public double ballVolume(Ball ball) {
-        return 4/3*Math.PI*Math.pow(ball.getR(),3);
+        return 4.0/3.0*Math.PI*Math.pow(ball.getR(),3);
     }
 
     @Override
     public double cubeVolume(Cube cube) {
-        Line2D a=new Line2D(cube.getP1().getX(),cube.getP1().getY(),cube.getP2().getX(),cube.getP2().getY());
-        LineCalc lineCalc=new LineCalc();
-        return Math.pow(lineCalc.linelLength(a),3);
+        return Math.pow(cube.getA(),3);
     }
 }

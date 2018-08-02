@@ -1,26 +1,15 @@
 public class Cube extends Shape3D {
-    private Point p1;
-    private Point p2;
+    private double a;
 
-    public Point getP1() {
-        return p1;
+    public Cube(double a) {
+        this.a = a;
     }
 
-    public void setP1(Point p1) {
-        this.p1 = p1;
+    public double getA() {
+        return a;
     }
 
-    public Point getP2() {
-        return p2;
+    public void setA(double a) {
+        this.a = a;
     }
-
-    public void setP2(Point p2) {
-        this.p2 = p2;
-    }
-
-    public Cube(Point p1, Point p2) {
-        this.p1 = p1;
-        this.p2 = p2;
-
-}
 }
